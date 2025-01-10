@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3rem;
+            color: #ff4e50;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+        .heart {
+            width: 200px;
+            height: 200px;
+            background: url('https://source.unsplash.com/200x200/?love,heart') no-repeat center center/cover;
+            border-radius: 50%;
+            margin: 20px auto;
+        }
+        .photo-gallery img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            margin: 10px;
+            object-fit: cover;
+        }
+        .button {
+            padding: 10px 20px;
+            background: #ff4e50;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e63946;
+        }
+    </style>
+    <script>
+        function respond(answer) {
+            if (answer === 'yes') {
+                alert('Hurray! 🎉🎈🌸');
+                document.body.innerHTML += '<h1>Hurray! 🎉🎈🌸</h1>';
+            } else {
+                alert('🥲😔');
+                document.body.innerHTML += '<h1>🥲😔</h1>';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>To My Special Someone 💖</h1>
+        <div class="heart"></div>
+        <p>I love you.
+        </p>
+        <button class="button" onclick="respond('yes')">Accept</button>
+        <button class="button" onclick="respond('no')">Reject</button>
+        
+    </div>
+</body>
+</html>
